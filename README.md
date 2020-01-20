@@ -1,4 +1,6 @@
 # learnings
+### 1) web scraping yahoo FB shares
+BeautifulSoup(r.content,"lxml") - "lxml " was main thing
 ```
 r=requests.get('https://finance.yahoo.com/quote/FB/')
 soup=bs4.BeautifulSoup(r.content,"lxml")
