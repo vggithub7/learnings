@@ -10,6 +10,12 @@ if price is not None and len(price) > 0:
  ```
 ### 2) email extract re and url
 
+    fhand = urllib.request.urlopen('https://cit.ac.in/departments/cse/academic') 
+     
+    for line in fhand: 
+    # Getting the text file 
+    # content line by line. 
+    s = line.decode().strip()
     reg = re.findall(r"[A-Za-z0-9._%+-]+"
                      r"@[A-Za-z0-9.-]+"
                      r"\.[A-Za-z]{2,4}", s) 
